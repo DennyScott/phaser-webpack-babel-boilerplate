@@ -1,0 +1,42 @@
+{
+  "name": "phaser-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "A basic boilerplate for phaser-webpack with es6",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --config webpack.build.js --bail -p",
+    "dev": "webpack-dev-server --history-api-fallback --hot --inline --progress",
+    "test": "mocha --compilers js:babel/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DennyScott/phaser-webpack-boilerplate.git"
+  },
+  "keywords": [
+    "phaser",
+    "webpack",
+    "es6"
+  ],
+  "author": "Denny Scott, Travis Scott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DennyScott/phaser-webpack-boilerplate/issues"
+  },
+  "babel": {
+    "stage": 1
+  },
+  "homepage": "https://github.com/DennyScott/phaser-webpack-boilerplate#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "~5.8.29",
+    "babel-core": "~5.8.29",
+    "babel-loader": "~5.3.2",
+    "babel-runtime": "~5.8.29",
+    "chai": "^3.4.0",
+    "html-webpack-plugin": "^1.6.2",
+    "mocha": "^2.3.3",
+    "script-loader": "^0.6.1",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  }
+}
